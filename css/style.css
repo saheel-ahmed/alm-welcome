@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Square&display=swap');
+
+body, html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('./../img/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Nova Square', cursive;
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('./../img/colorful-triangles-background.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.blur {
+    background: url('./../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    filter: blur(50px);
+    opacity: 0.2;
+    position: fixed;
+    height: 300px;
+    /* top: -50px; */
+    left: -200px;
+    right: -50px;
+    bottom: -200px;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    height: 300px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.logo-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 320px;
+    margin: 2% auto;
+}
+
+h1 {
+  
+}
+
+a {
+    color: cornsilk;
+}

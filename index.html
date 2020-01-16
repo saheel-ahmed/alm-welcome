@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <title>Al Meshwar Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="logo-holder">
+        <img src="./img/logo.png" alt="Al Meshwar" class="logo animated zoomIn" />
+    </div>
+
+
+
+    <footer class="animated fadeIn delay-1s">
+        <h1 class="animated heartBeat delay-1s">Welcome to Al Meshwar Restaurant</h1>
+        <h3 class="animated tada delay-1s">Our new website will be lunching soon.</h3>
+        <p class="animated slideInRight delay-1s">
+            Mail us: <a href="mailto:info@almeshwar.com">info@almeshwar.com</a>
+        </p>
+        <p>
+            Call us: <a href="tel:+97143336000" class="animated infinite pulse delay-2s">043336000</a>
+        </p>
+        <p class="animated slideInLeft delay-1s">
+            Address: 6 18 C St - Dubai | <a href="https://g.page/al-meshwar-restaurant?share" target="_blank">Map</a>
+        </p>
+        <small class="animated slideInUp delay-1s">2020 &copy; Al Meshwar Restaurant.</small>
+    </footer>
+
+    <div class="blur animated fadeInUpBig">
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script src="https://github.com/brandonaaron/jquery-cssHooks/blob/master/bgpos.js">
+    </script>
+    <script>
+        $(function() {
+     var p = [0, 0], speed = 10, runMe = function () {
+        var angle = Math.random() * 2 * Math.PI;
+        var d = [
+            speed * Math.cos(angle), 
+            speed * Math.sin(angle)
+        ];
+
+        for (var i = 0; i < 2; i++)
+           p[i] = (p[i] + d[i] > 100 || p[i] + d[i] < 0) ? p[i] - d[i] : p[i] + d[i];
+
+        $('.overlay').animate({
+            backgroundPositionX: p[0] + '%',
+            backgroundPositionY: p[1] + '%'
+        }, 1000, 'linear', runMe);
+     };
+    
+     runMe();
+});
+    </script>
+</body>
+</html>
